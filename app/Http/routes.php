@@ -10,7 +10,19 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+// vamos con las vistas 
+Route::get('/','FrontController@index');
+Route::get('index','FrontController@index');
+Route::get('contact','FrontController@contacto');
+Route::get('reviews','FrontController@reviews');
 
-Route::get('/', function () {
-    return view('welcome');
+
+// pruebas de routing
+Route::get('controlador','PruebaController@index');
+Route::resource('movie','MovieController');
+Route::get('prueba', function(){
+	return "Hola mundo";
+});
+Route::get('nombre/{nombre}', function($nombre){
+	return "El nombre es: ".$nombre;
 });
