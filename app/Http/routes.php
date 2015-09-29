@@ -16,5 +16,5 @@ Route::get('index','FrontController@index');
 Route::get('contact','FrontController@contacto');
 Route::get('reviews','FrontController@reviews');
 Route::get('admin','FrontController@admin');
-// controller usuario
+// controller admin usuario
 Route::resource('usuario','UsuarioController');
