@@ -18,3 +18,6 @@ Route::get('reviews','FrontController@reviews');
 Route::get('admin','FrontController@admin');
 // controller admin usuario
 Route::resource('usuario','UsuarioController');
+// login
+Route::resource('log', 'LogController');
+Route::get('logout','LogController@logout');
